@@ -1,4 +1,4 @@
-# SFTT-Using-ACI-EventTrigger-To-Azure-SQL
+# SFTP-Using-ACI-EventTrigger-To-Azure-SQL
 
 ## Architecture Diagram
 
