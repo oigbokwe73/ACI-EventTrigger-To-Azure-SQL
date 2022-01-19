@@ -29,8 +29,10 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 
 |FileName|Description|
 |:----|:----|
-|3FB620B0E0FD4E8F93C9E4D839D00E1C.json| Upload Config File|
-|3FB620B0E0FD4E8F93C9E4D839D00E1D.json| Search Records config File.|
+|3FB620B0E0FD4E8F93C9E4D839D00E1E.json| Search Azure DB for results|
+|3FB620B0E0FD4E8F93C9E4D839D00E1C.json| Event Trigger to create the batched files|
+|3FB620B0E0FD4E8F93C9E4D839D00E1D.json| Event Trigger to process all the batched files into a Azure SQL Database|
+|43EFE991E8614CFB9EDECF1B0FDED37B.json| Timer Trigger to Copy the file(s) from Azure File Share to Blob Container|
 
 ## Upload Configuration to Storage
 Go to created storage Account.. Click On "Blob Service" 
