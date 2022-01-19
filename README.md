@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/15838780/149241508-67d1d0af-9aea-47e3-abc2-335e891fafdc.png)
+![image](https://user-images.githubusercontent.com/15838780/150181825-7c08ea55-c50b-466c-90f0-f669d2cd02b1.png)
 
 
 ## Appplication Setting 
@@ -15,7 +15,7 @@
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|[STORAGE ACCOUNT NAME]|Example  "AzureWebJobsStorage"|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
-|TimerInterval|[TIMER_INTERVAL]|Example  "0 */5 * * * *" oNE MIN|
+|TimerInterval|[TIMER_INTERVAL]|Example  "0 */5 * * * *" 1 MIN|
 
 
 > **Note:**  Look at the configuration file in the **Config** Folder and created a Table to record information.
