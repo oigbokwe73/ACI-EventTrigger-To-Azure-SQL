@@ -1,0 +1,36 @@
+{
+  "Id": "ConnectToDatabaseForMigration",
+  "LineOfBusinessProcessData": [
+    {
+      "Key": "object",
+      "Type": "Xenhey.BPM.Core.Processes.ProcessData"
+    }
+  ],
+  "Type": "",
+  "DataFlowProcess": [
+    {
+      "Key": "ProcessCSVFilesMigrateToDatabase",
+      "Type": "Xenhey.BPM.Core.Processes.ConnectToDBProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "BatchDataIngestion",
+          "Value": "Yes"
+        },
+        {
+          "Key": "ColumnHeader",
+          "Value": "data,team,time,Opponent,Rank,Site,Result,Attendance,CurrentWins,CurrentLosses,StadiumCapacity,FillRate,NewCoach,Tailgating"
+        },
+        {
+          "Key": "DatabaseTableName",
+          "Value": "Training1_19_2022"
+        },
+        {
+          "Key": "ConnectionString",
+          "Value": "ConnectionString"
+        }
+      ]
+    }
+  ]
+}

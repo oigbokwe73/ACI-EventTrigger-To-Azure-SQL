@@ -1,0 +1,36 @@
+{
+  "Id": "ConnectToDatabaseToSearch",
+  "LineOfBusinessProcessData": [
+    {
+      "Key": "object",
+      "Type": "Xenhey.BPM.Core.Processes.ProcessData"
+    }
+  ],
+  "Type": "",
+  "DataFlowProcess": [
+    {
+      "Key": "SearchDatabaseForResults",
+      "Type": "Xenhey.BPM.Core.Processes.ConnectToDBProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "connectodatabase",
+          "Value": "Yes"
+        },
+        {
+          "Key": "connectodatabase",
+          "Value": "SearchTerm"
+        },
+        {
+          "Key": "connectionstring",
+          "Value": "ConnectionString"
+        },
+        {
+          "Key": "messageformat",
+          "Value": "application/json"
+        }
+      ]
+    }
+  ]
+}
