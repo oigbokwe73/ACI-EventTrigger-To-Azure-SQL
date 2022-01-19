@@ -7,7 +7,7 @@
 
 ## How to install  ACI for SFTP ##
 
-[ACI For SFTP]https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sftp-on-azure/
+https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sftp-on-azure
 ## Appplication Setting 
 
 |Key|Value | Comment|
