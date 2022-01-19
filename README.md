@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/15838780/149241508-67d1d0af-9aea-47e3-abc2-335e891fafdc.png)
+![image](https://user-images.githubusercontent.com/15838780/150184651-18af52b4-5928-43e2-9ef4-5a7488ac5376.png)
 
 
 ## How to install  ACI for SFTP ##
@@ -18,7 +18,7 @@
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|[STORAGE ACCOUNT NAME]|Example  "AzureWebJobsStorage"|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
-|TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1MIN|
+|TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1 MIN|
 
 
 > **Note:**  Look at the configuration file in the **Config** Folder and created a Table to record information.
