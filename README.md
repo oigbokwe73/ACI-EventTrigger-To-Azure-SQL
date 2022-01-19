@@ -15,6 +15,8 @@
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|[STORAGE ACCOUNT NAME]|Example  "AzureWebJobsStorage"|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
+|TimerInterval|[TIMER_INTERVAL]|Example  "0 */5 * * * *" oNE MIN|
+
 
 > **Note:**  Look at the configuration file in the **Config** Folder and created a Table to record information.
 
