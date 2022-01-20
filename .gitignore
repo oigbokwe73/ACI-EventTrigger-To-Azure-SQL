@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/AciToSQL/Properties/ServiceDependencies/AciToSQL20220119 - Zip Deploy/storage1.arm.json
+/AciToSQL/Properties/ServiceDependencies/AciToSQL20220119 - Zip Deploy/appInsights1.arm.json
+/AciToSQL/Properties/serviceDependencies.AciToSQL20220119 - Zip Deploy.json

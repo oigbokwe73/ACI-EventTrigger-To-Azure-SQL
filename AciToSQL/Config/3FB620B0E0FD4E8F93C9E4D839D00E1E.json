@@ -19,8 +19,8 @@
           "Value": "Yes"
         },
         {
-          "Key": "connectodatabase",
-          "Value": "SearchTerm"
+          "Key": "SearchTerm",
+          "Value": "query"
         },
         {
           "Key": "connectionstring",
