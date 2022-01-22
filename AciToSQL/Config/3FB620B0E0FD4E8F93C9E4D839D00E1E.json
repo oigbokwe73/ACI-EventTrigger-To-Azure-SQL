@@ -20,7 +20,7 @@
         },
         {
           "Key": "SearchTerm",
-          "Value": "query"
+          "Value": "search"
         },
         {
           "Key": "connectionstring",
@@ -29,6 +29,54 @@
         {
           "Key": "messageformat",
           "Value": "application/json"
+        }
+      ]
+    },
+		{
+      "Key": "TransformCsvPayload",
+      "Type": "Xenhey.BPM.Core.Processes.TransformationProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "messageformatin",
+          "Value": "application/json"
+        },
+        {
+          "Key": "StorageAccount",
+          "Value": "AzureWebJobsStorage"
+        },
+        {
+          "Key": "FolderName",
+          "Value": "config"
+        },
+        {
+          "Key": "FileName",
+          "Value": "FileTransformData.xsl"
+        },
+        {
+          "Key": "TransformPayload",
+          "Value": "yes"
+        },
+        {
+          "Key": "messageformatout",
+          "Value": "application/json"
+        }
+      ]
+    },
+		{
+      "Key": "MessageBuilderProcess",
+      "Type": "Xenhey.BPM.Core.Processes.MessageBuilderProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "BuildArrayMessageWithRootNode",
+          "Value": "Yes"
+        },
+        {
+          "Key": "RootName",
+          "Value": "Table"
         }
       ]
     }
