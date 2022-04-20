@@ -12,7 +12,7 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 
 |Key|Value | Comment|
 |:----|:----|:----|
-|FilePAth| [d:\site\wwwroot\Config\ |Folder is optional
+|FilePath| [d:\site\wwwroot\Config\ |Folder is optional
 |ApiKeyName|[API KEY NAME]|Will be passed in the header  :  the file name of the config.
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
