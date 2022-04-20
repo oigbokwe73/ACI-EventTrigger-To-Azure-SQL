@@ -18,7 +18,7 @@ namespace AciToSQL
             log.LogInformation("C# blob trigger function processed a request.");
             NameValueCollection nvc = new NameValueCollection();
             nvc.Add(ApiKeyName, "3FB620B0E0FD4E8F93C9E4D839D00E1D");
-            IOrchrestatorService orchrestatorService = new ManagedOrchestratorService(nvc);
+            IOrchrestatorService orchrestatorService = new LocalOrchestratorService(nvc);
             var processFiles = orchrestatorService.Run(myBlob);
         }
     }

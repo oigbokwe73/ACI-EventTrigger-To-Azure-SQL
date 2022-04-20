@@ -9,22 +9,38 @@
   "Type": "",
   "DataFlowProcess": [
     {
+      "Key": "Read-Uploaded-File",
+      "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "ReadCsvAsStreamv2",
+          "Value": "yes"
+        },
+        {
+          "Key": "messageformat",
+          "Value": "application/xml"
+        }
+      ]
+    },
+    {
       "Key": "ProcessCSVFilesMigrateToDatabase",
       "Type": "Xenhey.BPM.Core.Processes.ConnectToDBProcess",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "BatchDataIngestion",
+          "Key": "BulkInsertFromMessage",
           "Value": "Yes"
         },
         {
-          "Key": "ColumnHeader",
-          "Value": "data,team,time,Opponent,Rank,Site,Result,Attendance,CurrentWins,CurrentLosses,StadiumCapacity,FillRate,NewCoach,Tailgating"
+          "Key": "datatable",
+          "Value": "College"
         },
         {
           "Key": "DatabaseTableName",
-          "Value": "Training1_19_2022"
+          "Value": "College"
         },
         {
           "Key": "ConnectionString",

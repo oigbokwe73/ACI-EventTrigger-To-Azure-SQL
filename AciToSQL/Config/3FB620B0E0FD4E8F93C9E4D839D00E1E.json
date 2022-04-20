@@ -63,22 +63,6 @@
           "Value": "application/json"
         }
       ]
-    },
-		{
-      "Key": "MessageBuilderProcess",
-      "Type": "Xenhey.BPM.Core.Processes.MessageBuilderProcess",
-      "Async": "false",
-      "IsEnable": "true",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "BuildArrayMessageWithRootNode",
-          "Value": "Yes"
-        },
-        {
-          "Key": "RootName",
-          "Value": "Table"
-        }
-      ]
     }
   ]
 }

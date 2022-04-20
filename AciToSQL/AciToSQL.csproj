@@ -7,9 +7,27 @@
     <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.15.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.10" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.13" />
-    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="10.0.7" />
+    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="10.3.2" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Config\3FB620B0E0FD4E8F93C9E4D839D00E1C.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\3FB620B0E0FD4E8F93C9E4D839D00E1D.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\3FB620B0E0FD4E8F93C9E4D839D00E1E.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\43EFE991E8614CFB9EDECF1B0FDED37B.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\43EFE991E8614CFB9EDECF1B0FDED37G.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\FileTransformData.xsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

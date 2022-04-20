@@ -1,13 +1,4 @@
-﻿USE [xenheytraining]
-GO
-
-/****** Object: Table [dbo].[Training1_19_2022] Script Date: 1/12/2022 7:39:44 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
+﻿
 CREATE TABLE [dbo].[Training1_19_2022] (
     [data]            NVARCHAR (MAX) NULL,
     [team]            NVARCHAR (MAX) NULL,
