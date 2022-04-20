@@ -5,6 +5,9 @@
 ![image](https://user-images.githubusercontent.com/15838780/150184651-18af52b4-5928-43e2-9ef4-5a7488ac5376.png)
 
 
+## Data Ingestion in Azure
+![image](https://user-images.githubusercontent.com/15838780/164335490-13384b4d-d2ba-49a2-9f81-11d9e0fc3058.png)
+
 ## How to install  ACI for SFTP ##
 
 https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sftp-on-azure
@@ -12,7 +15,7 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 
 |Key|Value | Comment|
 |:----|:----|:----|
-|FilePath| [d:\site\wwwroot\Config\ |Folder is optional
+|FilePath| [d:\home\site\wwwroot\Config\ |Folder is optional
 |ApiKeyName|[API KEY NAME]|Will be passed in the header  :  the file name of the config.
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
