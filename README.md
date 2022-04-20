@@ -6,7 +6,7 @@
 
 
 ## Data Ingestion in Azure
-![image](https://user-images.githubusercontent.com/15838780/164335490-13384b4d-d2ba-49a2-9f81-11d9e0fc3058.png)
+![image](https://user-images.githubusercontent.com/15838780/164335631-cb14552e-2c03-474b-ae8a-1c2960dd650e.png)
 
 ## How to install  ACI for SFTP ##
 
