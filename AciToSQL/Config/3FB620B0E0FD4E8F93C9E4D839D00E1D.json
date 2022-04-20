@@ -25,10 +25,42 @@
       ]
     },
     {
+      "Key": "Write-XML-File-To-Storage",
+      "Type": "Xenhey.BPM.Core.Processes.BlobStorageWriteProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "WriteToStorage",
+          "Value": "yes"
+        },
+        {
+          "Key": "BlobStorageConnectionString",
+          "Value": "AzureWebJobsStorage"
+        },
+        {
+          "Key": "container",
+          "Value": "datastore"
+        },
+        {
+          "Key": "folderName",
+          "Value": "XmlFiles"
+        },
+        {
+          "Key": "ContentType",
+          "Value": "application/json"
+        },
+        {
+          "Key": "extension",
+          "Value": "json"
+        }
+      ]
+    },
+    {
       "Key": "ProcessCSVFilesMigrateToDatabase",
       "Type": "Xenhey.BPM.Core.Processes.ConnectToDBProcess",
       "Async": "false",
-      "IsEnable": "true",
+      "IsEnable": "false",
       "DataFlowProcessParameters": [
         {
           "Key": "BulkInsertFromMessage",

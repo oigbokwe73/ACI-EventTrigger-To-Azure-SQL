@@ -28,7 +28,7 @@ namespace AciToSQL
         {
             get
             {
-                return new ManagedOrchestratorService(nvc);
+                return new LocalOrchestratorService(nvc);
             }
         }
     }
