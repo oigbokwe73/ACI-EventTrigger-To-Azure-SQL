@@ -7,9 +7,12 @@
     <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.15.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.10" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.13" />
-    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="10.3.2" />
+    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="10.3.4" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Config\3FB620B0E0FD4E8F93C9E4D839D00E1F.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Config\3FB620B0E0FD4E8F93C9E4D839D00E1C.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

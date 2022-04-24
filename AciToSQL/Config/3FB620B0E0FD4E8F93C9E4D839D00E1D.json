@@ -9,10 +9,30 @@
   "Type": "",
   "DataFlowProcess": [
     {
+      "Key": "ReadJsonFromStream",
+      "Type": "Xenhey.BPM.Core.Processes.MessageBuilderProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "ReadJsonAsStream",
+          "Value": "yes"
+        },
+        {
+          "Key": "messageformat",
+          "Value": "application/xml"
+        },
+        {
+          "Key": "RootElement",
+          "Value": "Table1"
+        }
+      ]
+    },
+    {
       "Key": "Read-Uploaded-File",
       "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
       "Async": "false",
-      "IsEnable": "true",
+      "IsEnable": "false",
       "DataFlowProcessParameters": [
         {
           "Key": "ReadCsvAsStreamv2",
@@ -48,7 +68,7 @@
         },
         {
           "Key": "ContentType",
-          "Value": "application/json"
+          "Value": "application/xml"
         },
         {
           "Key": "extension",
