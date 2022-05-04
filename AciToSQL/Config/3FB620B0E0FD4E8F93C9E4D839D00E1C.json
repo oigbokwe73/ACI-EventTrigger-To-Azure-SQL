@@ -64,7 +64,7 @@
         },
         {
           "Key": "BatchSize",
-          "Value": "1001"
+          "Value": "1000"
         },
         {
           "Key": "FolderName",

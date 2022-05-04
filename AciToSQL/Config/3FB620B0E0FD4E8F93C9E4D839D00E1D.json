@@ -20,7 +20,7 @@
         },
         {
           "Key": "messageformat",
-          "Value": "application/xml"
+          "Value": "application/json"
         },
         {
           "Key": "RootElement",
@@ -29,17 +29,25 @@
       ]
     },
     {
-      "Key": "Read-Uploaded-File",
-      "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
+      "Key": "TransformJsonPayload",
+      "Type": "Xenhey.BPM.Core.Processes.TransformationProcess",
       "Async": "false",
-      "IsEnable": "false",
+      "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "ReadCsvAsStreamv2",
+          "Key": "messageformatin",
+          "Value": "application/json"
+        },
+        {
+          "Key": "FileName",
+          "Value": "FileTransformData.xsl"
+        },
+        {
+          "Key": "LocalTransformRequestPayload",
           "Value": "yes"
         },
         {
-          "Key": "messageformat",
+          "Key": "messageformatout",
           "Value": "application/xml"
         }
       ]
@@ -53,7 +61,7 @@
         {
           "Key": "WriteToStorage",
           "Value": "yes"
-        },
+        },  
         {
           "Key": "BlobStorageConnectionString",
           "Value": "AzureWebJobsStorage"
@@ -64,7 +72,7 @@
         },
         {
           "Key": "folderName",
-          "Value": "XmlFiles"
+          "Value": "xmlfiles"
         },
         {
           "Key": "ContentType",
@@ -72,7 +80,31 @@
         },
         {
           "Key": "extension",
-          "Value": "json"
+          "Value": "xml"
+        }
+      ]
+    },
+    {
+      "Key": "Write-To-Storage",
+      "Type": "Xenhey.BPM.Core.Processes.AzureTableStorageProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "CreateRecordForAzureTableBatch",
+          "Value": "yes"
+        },
+        {
+          "Key": "BatchSize",
+          "Value": "100"
+        },
+        {
+          "Key": "StorageAccount",
+          "Value": "AzureWebJobsStorage"
+        },
+        {
+          "Key": "TableName",
+          "Value": "training2022424"
         }
       ]
     },

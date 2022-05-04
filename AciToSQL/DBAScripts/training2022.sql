@@ -1,4 +1,22 @@
 ﻿
+CREATE TABLE [dbo].[Training1_19_2022] (
+    [data]            NVARCHAR (MAX) NULL,
+    [team]            NVARCHAR (MAX) NULL,
+    [time]            NVARCHAR (MAX) NULL,
+    [Opponent]        NVARCHAR (MAX) NULL,
+    [Rank]            NVARCHAR (MAX) NULL,
+    [Site]            NVARCHAR (MAX) NULL,
+    [Result]          NVARCHAR (MAX) NULL,
+    [Attendance]      NVARCHAR (MAX) NULL,
+    [CurrentWins]     NVARCHAR (MAX) NULL,
+    [CurrentLosses]   NVARCHAR (MAX) NULL,
+    [StadiumCapacity] NVARCHAR (MAX) NULL,
+    [FillRate]        NVARCHAR (MAX) NULL,
+    [NewCoach]        NVARCHAR (MAX) NULL,
+    [Tailgating]      NVARCHAR (MAX) NULL
+);
+
+
 CREATE TABLE [dbo].[CollegeInfo] (
     [OBJECTID]   NVARCHAR (MAX) NULL,
     [IPEDSID]    NVARCHAR (MAX) NULL,
@@ -69,7 +87,46 @@ CREATE TABLE [dbo].[College] (
 
 
 
+CREATE TABLE transactionhistory
+  (
+     accountnumber            NVARCHAR (max) NULL,
+     customerid               NVARCHAR (max) NULL,
+     creditlimit              NVARCHAR (max) NULL,
+     availablemoney           NVARCHAR (max) NULL,
+     currentbalance           NVARCHAR (max) NULL,
+     transactiondatetime      NVARCHAR (max) NULL,
+     transactionamount        NVARCHAR (max) NULL,
+     merchantname             NVARCHAR (max) NULL,
+     acqcountry               NVARCHAR (max) NULL,
+     merchantcountrycode      NVARCHAR (max) NULL,
+     posentrymode             NVARCHAR (max) NULL,
+     posconditioncode         NVARCHAR (max) NULL,
+     merchantcategorycode     NVARCHAR (max) NULL,
+     currentexpdate           NVARCHAR (max) NULL,
+     accountopendate          NVARCHAR (max) NULL,
+     dateoflastaddresschange  NVARCHAR (max) NULL,
+     cardcvv                  NVARCHAR (max) NULL,
+     enteredcvv               NVARCHAR (max) NULL,
+     cardlast4digits          NVARCHAR (max) NULL,
+     transactiontype          NVARCHAR (max) NULL,
+     echobuffer               NVARCHAR (max) NULL,
+     merchantcity             NVARCHAR (max) NULL,
+     merchantstate            NVARCHAR (max) NULL,
+     merchantzip              NVARCHAR (max) NULL,
+     cardpresent              NVARCHAR (max) NULL,
+     posonpremises            NVARCHAR (max) NULL,
+     recurringauthind         NVARCHAR (max) NULL,
+     expirationdatekeyinmatch NVARCHAR (max) NULL,
+     isfraud                  NVARCHAR (max) NULL
+  ) 
+
+
 select count(*) from [dbo].[College]
 
 truncate table [dbo].[College]
 
+
+
+select count(*) from [dbo].[Training1_19_2022]
+
+truncate table [dbo].[Training1_19_2022]
