@@ -9,10 +9,10 @@
   "Type": "",
   "DataFlowProcess": [
     {
-      "Key": "CreateCSVBatchFilesForProcessing",
+      "Key": "CreateJSONBatchFilesForProcessing",
       "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
       "Async": "false",
-      "IsEnable": "true",
+      "IsEnable": "false",
       "DataFlowProcessParameters": [
         {
           "Key": "StorageAccount",
@@ -52,7 +52,7 @@
       "Key": "CreateCSVBatchFilesForProcessing",
       "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
       "Async": "false",
-      "IsEnable": "false",
+      "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
           "Key": "StorageAccount",
@@ -64,7 +64,7 @@
         },
         {
           "Key": "BatchSize",
-          "Value": "1000"
+          "Value": "1001"
         },
         {
           "Key": "FolderName",

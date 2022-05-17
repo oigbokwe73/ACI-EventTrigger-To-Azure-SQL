@@ -1,0 +1,35 @@
+﻿---- Table --- 
+.create table tbltransactions (
+accountNumber: string, 
+customerId: string, 
+creditLimit: real, 
+availableMoney: real, 
+currentBalance: real, 
+transactionDateTime: datetime, 
+transactionAmount: real, 
+merchantName: string, 
+acqCountry: string, 
+merchantCountryCode: string, 
+posEntryMode: string, 
+posConditionCode: timespan, 
+merchantCategoryCode: string, 
+cardPresent: bool, 
+currentExpDate: datetime, 
+accountOpenDate: datetime, 
+dateOfLastAddressChange: datetime, 
+cardCVV: timespan, 
+enteredCVV: timespan, 
+cardLast4Digits: timespan, 
+transactionType: string, 
+echoBuffer: string, 
+merchantCity: string, 
+merchantState: string, 
+merchantZip: string, 
+posOnPremises: string, 
+recurringAuthInd: string, 
+expirationDateKeyInMatch: bool, 
+isFraud: bool
+) 
+// Create mapping command
+////////////////////////////////////////////////////////////
+.create table ['tbltransactions'] ingestion json mapping 'tbltransactions_mapping' '[{"column":"accountNumber", "Properties":{"Path":"$[\'accountNumber\']"}},{"column":"customerId", "Properties":{"Path":"$[\'customerId\']"}},{"column":"creditLimit", "Properties":{"Path":"$[\'creditLimit\']"}},{"column":"availableMoney", "Properties":{"Path":"$[\'availableMoney\']"}},{"column":"currentBalance", "Properties":{"Path":"$[\'currentBalance\']"}},{"column":"transactionDateTime", "Properties":{"Path":"$[\'transactionDateTime\']"}},{"column":"transactionAmount", "Properties":{"Path":"$[\'transactionAmount\']"}},{"column":"merchantName", "Properties":{"Path":"$[\'merchantName\']"}},{"column":"acqCountry", "Properties":{"Path":"$[\'acqCountry\']"}},{"column":"merchantCountryCode", "Properties":{"Path":"$[\'merchantCountryCode\']"}},{"column":"posEntryMode", "Properties":{"Path":"$[\'posEntryMode\']"}},{"column":"merchantCategoryCode", "Properties":{"Path":"$[\'merchantCategoryCode\']"}},{"column":"cardPresent", "Properties":{"Path":"$[\'cardPresent\']"}},{"column":"currentExpDate", "Properties":{"Path":"$[\'currentExpDate\']"}},{"column":"accountOpenDate", "Properties":{"Path":"$[\'accountOpenDate\']"}},{"column":"dateOfLastAddressChange", "Properties":{"Path":"$[\'dateOfLastAddressChange\']"}},{"column":"cardCVV", "Properties":{"Path":"$[\'cardCVV\']"}},{"column":"enteredCVV", "Properties":{"Path":"$[\'enteredCVV\']"}},{"column":"cardLast4Digits", "Properties":{"Path":"$[\'cardLast4Digits\']"}},{"column":"transactionType", "Properties":{"Path":"$[\'transactionType\']"}},{"column":"echoBuffer", "Properties":{"Path":"$[\'echoBuffer\']"}},{"column":"merchantCity", "Properties":{"Path":"$[\'merchantCity\']"}},{"column":"merchantState", "Properties":{"Path":"$[\'merchantState\']"}},{"column":"merchantZip", "Properties":{"Path":"$[\'merchantZip\']"}},{"column":"posOnPremises", "Properties":{"Path":"$[\'posOnPremises\']"}},{"column":"recurringAuthInd", "Properties":{"Path":"$[\'recurringAuthInd\']"}},{"column":"expirationDateKeyInMatch", "Properties":{"Path":"$[\'expirationDateKeyInMatch\']"}},{"column":"isFraud", "Properties":{"Path":"$[\'isFraud\']"}},{"column":"posConditionCode_1", "Properties":{"Path":"$[\'posConditionCode\']"}}]'

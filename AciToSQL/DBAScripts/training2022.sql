@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [dbo].[Training1_19_2022] (
+CREATE TABLE [dbo].[AmericanFootballGame] (
     [data]            NVARCHAR (MAX) NULL,
     [team]            NVARCHAR (MAX) NULL,
     [time]            NVARCHAR (MAX) NULL,
@@ -66,7 +66,7 @@ CREATE TABLE [dbo].[CollegeInfo] (
 
 
 
-CREATE TABLE [dbo].[College] (
+CREATE TABLE [dbo].[CollegeContacts] (
     [Company]      NVARCHAR (MAX) NULL,
     [Address]      NVARCHAR (MAX) NULL,
     [City]         NVARCHAR (MAX) NULL,

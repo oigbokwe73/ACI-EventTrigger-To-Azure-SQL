@@ -1,5 +1,5 @@
 {
-  "Id": "ConnectToDatabaseForMigration",
+  "Id": "SendDataToEventHub",
   "LineOfBusinessProcessData": [
     {
       "Key": "object",
@@ -12,7 +12,7 @@
       "Key": "ReadJsonFromStream",
       "Type": "Xenhey.BPM.Core.Processes.MessageBuilderProcess",
       "Async": "false",
-      "IsEnable": "true",
+      "IsEnable": "false",
       "DataFlowProcessParameters": [
         {
           "Key": "ReadJsonAsStream",
@@ -21,114 +21,26 @@
         {
           "Key": "messageformat",
           "Value": "application/json"
-        },
-        {
-          "Key": "RootElement",
-          "Value": "Table1"
         }
       ]
     },
     {
-      "Key": "TransformJsonPayload",
-      "Type": "Xenhey.BPM.Core.Processes.TransformationProcess",
+      "Key": "AddEventHubProcess",
+      "Type": "Xenhey.BPM.Core.Processes.EventHubProcess",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "messageformatin",
-          "Value": "application/json"
-        },
-        {
-          "Key": "FileName",
-          "Value": "FileTransformData.xsl"
-        },
-        {
-          "Key": "LocalTransformRequestPayload",
+          "Key": "SendCSVRecord",
           "Value": "yes"
         },
         {
-          "Key": "messageformatout",
-          "Value": "application/xml"
-        }
-      ]
-    },
-    {
-      "Key": "Write-XML-File-To-Storage",
-      "Type": "Xenhey.BPM.Core.Processes.BlobStorageWriteProcess",
-      "Async": "false",
-      "IsEnable": "true",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "WriteToStorage",
-          "Value": "yes"
-        },  
-        {
-          "Key": "BlobStorageConnectionString",
-          "Value": "AzureWebJobsStorage"
+          "Key": "EventHubConnectionString",
+          "Value": "EventHubConnectionString"
         },
         {
-          "Key": "container",
-          "Value": "datastore"
-        },
-        {
-          "Key": "folderName",
-          "Value": "xmlfiles"
-        },
-        {
-          "Key": "ContentType",
-          "Value": "application/xml"
-        },
-        {
-          "Key": "extension",
-          "Value": "xml"
-        }
-      ]
-    },
-    {
-      "Key": "Write-To-Storage",
-      "Type": "Xenhey.BPM.Core.Processes.AzureTableStorageProcess",
-      "Async": "false",
-      "IsEnable": "true",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "CreateRecordForAzureTableBatch",
-          "Value": "yes"
-        },
-        {
-          "Key": "BatchSize",
-          "Value": "100"
-        },
-        {
-          "Key": "StorageAccount",
-          "Value": "AzureWebJobsStorage"
-        },
-        {
-          "Key": "TableName",
-          "Value": "training2022424"
-        }
-      ]
-    },
-    {
-      "Key": "ProcessCSVFilesMigrateToDatabase",
-      "Type": "Xenhey.BPM.Core.Processes.ConnectToDBProcess",
-      "Async": "false",
-      "IsEnable": "false",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "BulkInsertFromMessage",
-          "Value": "Yes"
-        },
-        {
-          "Key": "datatable",
-          "Value": "College"
-        },
-        {
-          "Key": "DatabaseTableName",
-          "Value": "College"
-        },
-        {
-          "Key": "ConnectionString",
-          "Value": "ConnectionString"
+          "Key": "EventHubName",
+          "Value": "collegeinfo"
         }
       ]
     }

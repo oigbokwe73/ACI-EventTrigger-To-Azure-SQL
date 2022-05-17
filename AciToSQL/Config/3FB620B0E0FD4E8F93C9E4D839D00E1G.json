@@ -1,0 +1,48 @@
+{
+  "Id": "CsvProcess",
+  "LineOfBusinessProcessData": [
+    {
+      "Key": "object",
+      "Type": "Xenhey.BPM.Core.Processes.ProcessData"
+    }
+  ],
+  "Type": "",
+  "DataFlowProcess": [
+    {
+      "Key": "ReadFromTransactionTable",
+      "Type": "Xenhey.BPM.Core.Processes.ADXQueryProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "ValidateWithKustoQuery",
+          "Value": "yes"
+        },
+        {
+          "Key": "Cluster",
+          "Value": "Cluster"
+        },
+        {
+          "Key": "Database",
+          "Value": "transactions"
+        },
+        {
+          "Key": "TenantID",
+          "Value": "TenantID"
+        },
+        {
+          "Key": "AppID",
+          "Value": "AppID"
+        },
+        {
+          "Key": "AppSecret",
+          "Value": "AppSecret"
+        },
+        {
+          "Key": "messageformat",
+          "Value": "application/json"
+        }
+      ]
+    }
+  ]
+}
