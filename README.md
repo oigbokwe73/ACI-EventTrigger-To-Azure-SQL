@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/15838780/150184651-18af52b4-5928-43e2-9ef4-5a7488ac5376.png)
+![image](https://user-images.githubusercontent.com/15838780/168822692-74fb4c69-ea6c-461a-9b47-58ba81fbced4.png)
 
 
 ## Data Ingestion in Azure
@@ -20,6 +20,9 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
 |TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1 MIN|
+|AppSecret|[APP SECRET]|Credentials for the Service Principle Identity|
+|EventHubConnectionString|Endpoint=sb://[EVENTHUBNAME]/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=[KEY]| connection string to eventhub|
+|Cluster|https://[DATABASENAE].[REGION].kusto.windows.net/| NAME and REGION for the NoSQL Database|
 
 
 > **Note:**  Look at the configuration file in the **Config** Folder and created a Table to record information.
