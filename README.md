@@ -21,7 +21,7 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
 |TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1 MIN|
 |AppSecret|[APP SECRET]|Credentials for the Service Principle Identity|
-|EventHubConnectionString|Endpoint=sb://[EVENTHUBNAME]/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=[KEY]| connection string to eventhub|
+|EventHubConnectionString|Endpoint=sb://[EVENTHUBNAME][KEY]| connection string to eventhub|
 |Cluster|https://[DATABASENAE].[REGION].kusto.windows.net/| NAME and REGION for the NoSQL Database|
 
 
