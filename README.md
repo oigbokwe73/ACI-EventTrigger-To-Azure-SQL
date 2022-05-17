@@ -15,7 +15,7 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 
 |Key|Value | Comment|
 |:----|:----|:----|
-|FilePath| [d:\home\site\wwwroot\Config\ |Folder is optional
+|FilePath| d:\home\site\wwwroot\Config\ |Folder is optional
 |ApiKeyName|[API KEY NAME]|Will be passed in the header  :  the file name of the config.
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
@@ -47,9 +47,6 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 |VsCode| https://visualstudio.microsoft.com/downloads/ |  Required extensions. Azure Functions, Azure Account
 |VS Studio Community Edition |https://visualstudio.microsoft.com/downloads/| Recommended. Nice intergration with Azure. software is free.
 
-## bug
-  
-if the  csv has "," in the payload will throw  a "column header error". Only use CSV's without  Commas(",") in the  
   
   
   ## Contact
