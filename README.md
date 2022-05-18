@@ -21,8 +21,13 @@ https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sf
 |ConnectionString|[CONNECTION_STRING NAME]|Example  "ConnectionString"|
 |TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1 MIN|
 |AppSecret|[APP SECRET]|Credentials for the Service Principle Identity|
+|TenantID|Azure TenantID| ----|
 |EventHubConnectionString|Endpoint=sb://[EVENTHUBNAME][KEY]| connection string to eventhub|
 |Cluster|https://[DATABASENAE].[REGION].kusto.windows.net/| NAME and REGION for the NoSQL Database|
+|FilePath|d:\\home\site\wwwroot\Config\|Location to the Config File|
+
+
+
 
 
 > **Note:**  Look at the configuration file in the **Config** Folder and created a Table to record information.
