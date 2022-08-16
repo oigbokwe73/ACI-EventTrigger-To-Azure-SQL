@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/15838780/185000705-8718757b-eb10-4851-a1ca-a6d9137293dd.png)
+![image](https://user-images.githubusercontent.com/15838780/185001946-01bad2e8-191c-45f2-982f-5dbb9390a200.png)
 
 
 
